@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="calculator">
+        <div class="screen"></div>
+        <div class="buttons">
+            <div class="firstLine">
+                <button class="grey" onclick="clearScreen()">AC</button>
+                <button class="grey" onclick="backspace()">C</button>
+                <button class="grey" onclick="calculatePercentage()">%</button>
+                <button class="orange" onclick="addOperator('/')">/</button>
+            </div>
+            <div class="secondLine">
+                <button onclick="updateScreen('7')">7</button>
+                <button onclick="updateScreen('8')">8</button>
+                <button onclick="updateScreen('9')">9</button>
+                <button class="orange" onclick="addOperator('*')">x</button>
+            </div>
+            <div class="thirdLine">
+                <button onclick="updateScreen('4')">4</button>
+                <button onclick="updateScreen('5')">5</button>
+                <button onclick="updateScreen('6')">6</button>
+                <button class="orange" onclick="addOperator('-')">-</button>
+            </div>
+            <div class="fourthLine">
+                <button onclick="updateScreen('1')">1</button>
+                <button onclick="updateScreen('2')">2</button>
+                <button onclick="updateScreen('3')">3</button>
+                <button class="orange"  onclick="addOperator('+')">+</button>
+            </div>
+            <div class="fifthLine">
+                <button id="zero" onclick="updateScreen('0')">0</button>
+                <button onclick="updateScreen(',')">,</button>
+                <button class="orange"  onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
